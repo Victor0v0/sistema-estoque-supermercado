@@ -6,6 +6,17 @@ import model.Produto;
  * Classe abstrata base do padrao Decorator.
  * Permite adicionar responsabilidades a um Produto
  * dinamicamente sem criar subclasses para cada combinacao.
+ * 
+ * Padrao aplicado: Decorator
+ * Categoria: Estrutural
+ * Problema resolvido: evita a explosao de subclasses ao
+ * adicionar funcionalidades como desconto e alerta de forma
+ * independente e combinavel.
+ * 
+ * Exemplo de uso:
+ * Produto p = ProdutoFactory.criar("perecivel", ...);
+ * Produto comDesconto = new ProdutoComDesconto(p, 0.10);
+ * Produto comAlerta = new ProdutoComAlerta(comDesconto, 5);
  *
  * @author Victor
  * @version 1.0
