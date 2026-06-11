@@ -16,12 +16,16 @@ public interface Observavel {
      * @param observador objeto que deseja receber notificacoes
      */
     void adicionarObservador(Observador observador);
-
-    /**
-     * Notifica todos os observadores cadastrados
-     * sobre uma mudanca no estado do estoque.
+    
+      /**
+     * Envia uma mensagem para todos os observadores cadastrados.
+     * Usamos esse método para avisar quando o estoque sofre
+     * alguma alteração.
      *
-     * @param mensagem mensagem a ser enviada aos observadores
+     * Eles recebem a mesma mensagem ao mesmo tempo, o que
+     * deixa a comunicação mais organizada.
+     *
+     * @param mensagem mensagem enviada para os observadores
      */
     void notificarObservadores(String mensagem);
 }
