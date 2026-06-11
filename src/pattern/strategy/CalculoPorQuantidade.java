@@ -2,10 +2,10 @@ package pattern.strategy;
 
 /**
  * Implementacao da estrategia de calculo baseada
- * na quantidade de itens movimentados.
+ * na quantidade de itens movimentados, tanto compra quanto venda.
  * Aplica um fator multiplicador sobre o valor unitario.
  *
- * @author Miguel Santos
+ * @author Miguel Expedito, Miguel Santos
  * @version 1.0
  */
 public class CalculoPorQuantidade implements EstrategiaCalculo {

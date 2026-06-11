@@ -4,9 +4,9 @@ package pattern.strategy;
  * Interface que define o contrato para as estrategias
  * de calculo de gasto na movimentacao do estoque.
  * Implementa o padrao Strategy permitindo trocar o
- * algoritmo de calculo em tempo de execucao.
+ * algoritmo de calculo em tempo de execucao, deixando mais fexivel e optavel.
  *
- * @author Miguel Santos
+ * @author Miguel Expedito, Miguel Santos
  * @version 1.0
  */
 public interface EstrategiaCalculo {

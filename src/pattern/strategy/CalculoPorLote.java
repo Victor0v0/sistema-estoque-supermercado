@@ -2,11 +2,11 @@ package pattern.strategy;
 
 /**
  * Implementacao da estrategia de calculo baseada
- * no tamanho do lote de produtos.
+ * no tamanho do lote de produtos e na quantidade.
  * Divide a quantidade pelo tamanho do lote para
- * calcular o valor total.
+ * calcular o valor total, tendo o valor quantitativo unitario.
  *
- * @author Miguel Santos
+ * @author Miguel Expedito, Miguel Santos
  * @version 1.0
  */
 public class CalculoPorLote implements EstrategiaCalculo {
