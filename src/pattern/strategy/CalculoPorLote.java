@@ -3,8 +3,8 @@ package pattern.strategy;
 /**
  * Implementacao da estrategia de calculo baseada
  * no tamanho do lote de produtos e na quantidade.
- * Divide a quantidade pelo tamanho do lote para
- * calcular o valor total, tendo o valor quantitativo unitario.
+ * A quantidade e dividida pelo tamanho do lote (divisao inteira),
+ * e o resultado e multiplicado pelo valor unitario para obter o valor total
  *
  * @author Miguel Expedito, Miguel Santos
  * @version 1.0
@@ -19,19 +19,19 @@ public class CalculoPorLote implements EstrategiaCalculo {
     /**
      * Construtor da classe CalculoPorLote.
      *
-     * @param tamLote tamanho do lote
+     * @param tamLote tamanho do lote; deve ser maior que zero
      */
     public CalculoPorLote(int tamLote) {
         this.tamLote = tamLote;
     }
 
     /**
-     * Calcula o valor total dividindo a quantidade
-     * pelo tamanho do lote e multiplicando pelo valor unitario.
+     * Calcula o valor total com base no numero de lotes completos.
+     * A divisao entre "quantidade" e "tamLote" e inteira, ou seja, lotes incompletos nao sao contabilizados.
      *
      * @param quantidade quantidade de itens
      * @param valorUnitario valor unitario do produto
-     * @return valor total calculado por lote
+     * @return valor total calculado com base nos lotes completos
      */
     @Override
     public double calcular(int quantidade, double valorUnitario) {
